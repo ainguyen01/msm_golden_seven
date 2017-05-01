@@ -3,9 +3,6 @@ Rails.application.routes.draw do
   get('/', {:controller => 'movies', :action => 'index' })
   get('/index', {:controller => 'movies', :action => 'index' })
 
-  get('/movies/:id', {:controller => 'movies', :action => 'show' })
-
-
   get('/movies/new_form', {:controller => 'movies', :action => 'new_form' })
   get('/create_movie', {:controller => 'movies', :action => 'create_movie' })
 
@@ -14,4 +11,5 @@ Rails.application.routes.draw do
 
   get('/delete_movie/:id', {:controller => 'movies', :action => 'delete_movie' })
 
+  get('/movies/:id', {:controller => 'movies', :action => 'show' })
 end
